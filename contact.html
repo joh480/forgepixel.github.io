@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | John T. Matimba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">John T. Matimba</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>
+                Interested in working together or have a question? Fill out the form below or reach out directly using the details provided.
+            </p>
+            <form class="contact-form" action="mailto:johntmatimba@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <h2>Other Ways to Connect</h2>
+                <ul>
+                    <li>Email: <a href="mailto:johntmatimba@gmail.com">johntmatimba@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+27625642697">+27 62 564 2697</a></li>
+                    <!-- Add more contact methods if you want -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
